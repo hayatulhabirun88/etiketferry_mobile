@@ -126,6 +126,21 @@ class TicketDetailsPage extends StatelessWidget {
                           ),
                         ],
                       ),
+                      const Divider(), // Garis pemisah
+                      Row(
+                        children: [
+                          Icon(Icons.person,
+                              color: Colors.blueAccent), // Ikon untuk penumpang
+                          const SizedBox(
+                              width: 10), // Jarak antara ikon dan teks
+                          Expanded(
+                            child: Text(
+                              'Jumlah Penumpang: 1 Orang',
+                              style: const TextStyle(fontSize: 18),
+                            ),
+                          ),
+                        ],
+                      ),
                       // Tambahkan informasi lain yang diperlukan sesuai data respons
                     ],
                   ),
